@@ -1,0 +1,8 @@
+[Unit]
+Description=Wifi Jammer
+
+[Service]
+Type=simple
+# I forget why this line is here...I don't think the script even uses tmp, oh well.
+PrivateTmp=true
+ExecStart=/usr/bin/python2 /home/alarm/wifijammer/wifijammer.py
