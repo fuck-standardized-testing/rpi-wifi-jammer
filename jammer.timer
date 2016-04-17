@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs jammer after delay
+
+[Timer]
+# Time to wait after booting before we run first time
+OnBootSec=90min
+Unit=jammer.service
+
+[Install]
+WantedBy=multi-user.target
